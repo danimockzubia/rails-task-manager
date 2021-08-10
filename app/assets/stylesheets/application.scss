@@ -12,6 +12,7 @@ body {
   padding: 30px;
   text-align: center;
   border-color: lavender;
+  margin-bottom: 40px;
 
 }
 
@@ -20,8 +21,14 @@ body {
   font-size: larger;
 }
 
+
 a {
   color: #495057;
+}
+
+a:hover {
+  text-decoration: none;
+  color: rgb(156, 102, 180);
 }
 
 input {
@@ -41,3 +48,30 @@ i:hover {
   padding: 3px;
   border-radius: 5px;
 }
+
+.fa {
+  font-size: small;
+  color:rgb(130, 125, 196)
+}
+
+.fas {
+  color:rgb(130, 125, 196)
+}
+
+.far {
+  font-size: 45px;
+}
+
+#header {
+  margin-top: 30px;
+  text-align: center;
+  margin: auto;
+
+}
+ h3 {
+  background: -webkit-linear-gradient(#cf89be, rgb(130, 125, 196));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 35px;
+  font-weight: bolder;
+ }
