@@ -1,0 +1,21 @@
+<head>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<div class='container'>
+  <div class='card'>
+    <h2><%= @task.title %></h2>
+    <p><%= @task.details %></p>
+  <div>
+  <div class='card'>
+    <%= form_for(@task) do |f| %>
+      <%= f.label :title %>
+      <%= f.text_field :title %>
+      <%= f.label :details %>
+      <%= f.text_field :details %>
+      <%= f.label :completed %>
+      <%= f.check_box :completed %>
+      <%= f.submit %>
+    <% end %>
+    </div>
+</div>

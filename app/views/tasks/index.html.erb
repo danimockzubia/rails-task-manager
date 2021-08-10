@@ -1,0 +1,30 @@
+<head>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<div class="container">
+  <div class="card">
+    <ul>
+      <% @tasks.each do |task| %>
+        <li>
+        <%= link_to task.title, task_path(task) %>
+          <%= link_to "X",
+            task_path(task),
+            method: :delete,
+            data: { confirm: "Are you sure?" } %>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+
+
+  <div class="card">
+    <%= form_for :task do |f| %>
+      <%= f.label :title %>
+      <%= f.text_field :title %>
+      <%= f.label :details %>
+      <%= f.text_field :details %>
+      <%= f.submit %>
+    <% end %>
+  </div>
+</div>
