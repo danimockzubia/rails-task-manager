@@ -1,12 +1,18 @@
 @import "bootstrap/scss/bootstrap";
 
 body {
-  background-color: lavender;
+  background: rgb(214,211,245);
+  background: linear-gradient(90deg, rgba(214,211,245,1) 0%, rgba(188,188,241,1) 45%, rgba(189,228,237,1) 100%);
+  color: rgb(73, 73, 77);
 }
 .card {
+  background: rgb(225,223,247);
+  background: linear-gradient(90deg, rgba(225,223,247,1) 0%, rgba(198,198,242,1) 45%, rgba(224,240,244,1) 100%);
   margin-top: 30px;
   padding: 30px;
   text-align: center;
+  border-color: lavender;
+
 }
 
 #list {
@@ -19,6 +25,7 @@ a {
 }
 
 input {
+
   background-color: lavender;
   border-radius: 5px;
   border-color:lavender;
