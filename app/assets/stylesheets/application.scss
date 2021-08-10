@@ -1,6 +1,30 @@
 @import "bootstrap/scss/bootstrap";
+
+body {
+  background-color: lavender;
+}
 .card {
   margin-top: 30px;
   padding: 30px;
   text-align: center;
+}
+
+#list {
+  text-align: left;
+  font-size: larger;
+}
+
+a {
+  color: #495057;
+}
+
+input {
+  background-color: lavender;
+  border-radius: 5px;
+  border-color:lavender;
+  margin: 10px;
+}
+
+li {
+  list-style-type: none;
 }
