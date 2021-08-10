@@ -1,7 +1,6 @@
 <head>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 </head>
-
 <body>
   <div class="container">
     <div id="list" class="card">
@@ -9,7 +8,7 @@
         <% @tasks.each do |task| %>
           <li>
           <%= link_to task.title, task_path(task) %>
-            <%= link_to " x",
+          <%= link_to '<i class="fa fa-trash"></i>'.html_safe,
               task_path(task),
               method: :delete,
               data: { confirm: "Are you sure you want to delete?" } %>
